@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Interesting fact about Mathematics",
+    "content": "Mathematics is a field of study that discovers and organizes methods, theories and theorems that are developed and proved for the needs of empirical sciences and mathematics itself. There are many areas of mathematics, which include number theory (the study of numbers), algebra (the study of formulas and related structures), geometry (the study of shapes and spaces that contain them), analysis (the study of continuous changes), and set theory (presently used as a foundation for all mathematics).",
+    "topic": "Mathematics",
+    "difficulty": "Beginner",
+    "readingTime": 53,
+    "tags": [
+      "mathematics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Mathematics",
+    "content": "Mathematics involves the description and manipulation of abstract objects that consist of either abstractions from nature or—in modern mathematics—purely abstract entities that are stipulated to have certain properties, called axioms.  Mathematics uses pure reason to prove properties of objects, a proof consisting of a succession of applications of deductive rules to already established results. These results include previously proved theorems, axioms, and—in case of abstraction from nature—some basic properties that are considered true starting points of the theory under consideration.[1]",
+    "topic": "Mathematics",
+    "difficulty": "Beginner",
+    "readingTime": 37,
+    "tags": [
+      "mathematics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Mathematics",
+    "content": "Mathematics is essential in the natural sciences, engineering, medicine, finance, computer science, and the social sciences. Although mathematics is extensively used for modeling phenomena, the fundamental truths of mathematics are independent of any scientific experimentation. Some areas of mathematics, such as statistics and game theory, are developed in close correlation with their applications and are often grouped under applied mathematics. Other areas are developed independently from any application (and are therefore called pure mathematics) but often later find practical applications.[2][3]",
+    "topic": "Mathematics",
+    "difficulty": "Beginner",
+    "readingTime": 40,
+    "tags": [
+      "mathematics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Mathematics",
+    "content": "Historically, the concept of a proof and its associated mathematical rigour first appeared in Greek mathematics, most notably in Euclid's Elements.[4] Since its beginning, mathematics was primarily divided into geometry and arithmetic (the manipulation of natural numbers and fractions), until the 16th and 17th centuries, when algebra[a] and infinitesimal calculus were introduced as new fields. Since then, the interaction between mathematical innovations and scientific discoveries has led to a correlated increase in the development of both.[5] At the end of the 19th century, the foundational crisis of mathematics led to the systematization of the axiomatic method,[6] which heralded a dramatic increase in the number of mathematical areas and their fields of application. The contemporary Mathematics Subject Classification lists more than sixty first-level areas of mathematics.",
+    "topic": "Mathematics",
+    "difficulty": "Advanced",
+    "readingTime": 57,
+    "tags": [
+      "mathematics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Physics",
+    "content": "Physics is the scientific study of matter, its fundamental constituents, its motion and behavior through space and time, and the related entities of energy and force.[1] It is one of the most fundamental scientific disciplines.[2][3][4] A scientist who specializes in the field of physics is called a physicist.",
+    "topic": "Physics",
+    "difficulty": "Beginner",
+    "readingTime": 36,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Physics",
+    "content": "Physics is one of the oldest academic disciplines.[5] Over much of the past two millennia, physics, chemistry, biology, and certain branches of mathematics were a part of natural philosophy, but during the Scientific Revolution in the 17th century, these natural sciences branched into separate research endeavors. Physics intersects with many interdisciplinary areas of research, such as biophysics and quantum chemistry, and the boundaries of physics are not rigidly defined. New ideas in physics often explain the fundamental mechanisms studied by other sciences[2] and suggest new avenues of research in these and other academic disciplines such as mathematics and philosophy.",
+    "topic": "Physics",
+    "difficulty": "Intermediate",
+    "readingTime": 34,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Physics",
+    "content": "Advances in physics often enable new technologies. For example, advances in the understanding of electromagnetism, solid-state physics, and nuclear physics led directly to the development of technologies that have transformed modern society, such as television, computers, domestic appliances, and nuclear weapons;[2] advances in thermodynamics led to the development of industrialization; and advances in mechanics inspired the development of calculus.",
+    "topic": "Physics",
+    "difficulty": "Advanced",
+    "readingTime": 46,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Physics",
+    "content": "The word physics comes from the Latin physica ('study of nature'), which itself is a borrowing of the Greek φυσική (phusikḗ 'natural science'), a term derived from φύσις (phúsis 'origin, nature, property').[6][7][8]",
+    "topic": "Physics",
+    "difficulty": "Intermediate",
+    "readingTime": 51,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "title": "Interesting fact about Chemistry",
+    "content": "Chemistry is the scientific study of the properties and behavior of matter.[1][2] It is a physical science within the natural sciences that studies the chemical elements that make up matter and compounds made of atoms, molecules and ions: their composition, structure, properties, behavior and the changes they undergo during reactions with other substances.[3][4][5][6] Chemistry also addresses the nature of chemical bonds in chemical compounds.",
+    "topic": "Chemistry",
+    "difficulty": "Beginner",
+    "readingTime": 51,
+    "tags": [
+      "chemistry"
+    ]
+  },
+  {
+    "title": "Interesting fact about Chemistry",
+    "content": "In the scope of its subject, chemistry occupies an intermediate position between physics and biology.[7] It is sometimes called the central science because it provides a foundation for understanding both basic and applied scientific disciplines at a fundamental level.[8] For example, chemistry explains aspects of plant growth (botany), the formation of igneous rocks (geology), how atmospheric ozone is formed and how environmental pollutants are degraded (ecology), the properties of the soil on the Moon (cosmochemistry), how medications work (pharmacology), and how to collect DNA evidence at a crime scene (forensics).",
+    "topic": "Chemistry",
+    "difficulty": "Advanced",
+    "readingTime": 54,
+    "tags": [
+      "chemistry"
+    ]
+  },
+  {
+    "title": "Interesting fact about Chemistry",
+    "content": "Chemistry has existed under various names since ancient times.[9] It has evolved, and now chemistry encompasses various areas of specialisation, or subdisciplines, that continue to increase in number and interrelate to create further interdisciplinary fields of study. The applications of various fields of chemistry are used frequently for economic purposes in the chemical industry.",
+    "topic": "Chemistry",
+    "difficulty": "Beginner",
+    "readingTime": 15,
+    "tags": [
+      "chemistry"
+    ]
+  },
+  {
+    "title": "Interesting fact about Chemistry",
+    "content": "The word chemistry comes from a modification during the Renaissance of the word alchemy, which referred to an earlier set of practices that encompassed elements of chemistry, metallurgy, philosophy, astrology, astronomy, mysticism, and medicine. Alchemy is often associated with the quest to turn lead or other base metals into gold, though alchemists were also interested in many of the questions of modern chemistry.[10][11]",
+    "topic": "Chemistry",
+    "difficulty": "Beginner",
+    "readingTime": 15,
+    "tags": [
+      "chemistry"
+    ]
+  },
+  {
+    "title": "Interesting fact about Biology",
+    "content": "Biology is the scientific study of life.[1][2][3] It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field.[1][2][3] For instance, all organisms are composed of at least one cell that processes hereditary information encoded in genes, which can be transmitted to future generations. Another major theme is evolution, which explains the unity and diversity of life.[1][2][3] Energy processing is also important to life as it allows organisms to move, grow, and reproduce.[1][2][3] Finally, all organisms can regulate their own internal environments.[1][2][3][4][5]",
+    "topic": "Biology",
+    "difficulty": "Beginner",
+    "readingTime": 15,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "title": "Interesting fact about Biology",
+    "content": "Biologists can study life at multiple levels of organization,[1] from the molecular biology of a cell to the anatomy and physiology of plants and animals, and the evolution of populations.[1][6] Hence, there are multiple subdisciplines within biology, each defined by the nature of their research questions and the tools that they use.[7][8][9] Like other scientists, biologists use the scientific method to make observations, pose questions, generate hypotheses, perform experiments, and form conclusions about the world around them.[1]",
+    "topic": "Biology",
+    "difficulty": "Intermediate",
+    "readingTime": 58,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "title": "Interesting fact about Biology",
+    "content": "Life on Earth, which emerged over 3.7 billion years ago,[10] is immensely diverse. Biologists have sought to study and classify the various life form, from prokaryotic organisms such as archaea and bacteria to eukaryotic organisms such as protists, fungi, plants, and animals. These organisms contribute to the biodiversity of an ecosystem, where they play specialized roles in the cycling of nutrients and energy through their biophysical environment.",
+    "topic": "Biology",
+    "difficulty": "Advanced",
+    "readingTime": 42,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "title": "Interesting fact about Biology",
+    "content": "The earliest of roots of science, which included medicine, can be traced to ancient Egypt and Mesopotamia in around 3000 to 1200 BCE.[11][12] Their contributions shaped ancient Greek natural philosophy.[13][11][12][14][15] Ancient Greek philosophers such as Aristotle (384–322 BCE) contributed extensively to the development of biological knowledge.[16] He explored biological causation and the diversity of life. His successor, Theophrastus, began the scientific study of plants.[17] Scholars of the medieval Islamic world who wrote on biology included al-Jahiz (781–869), Al-Dīnawarī (828–896), who wrote on botany,[18] and Rhazes (865–925) who wrote on anatomy and physiology. Medicine was especially well studied by Islamic scholars working in Greek philosopher traditions, while natural history drew heavily on Aristotelian thought.",
+    "topic": "Biology",
+    "difficulty": "Advanced",
+    "readingTime": 20,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "title": "Interesting fact about Computer_science",
+    "content": "Computer science is the study of computation, information, and automation.[1][2][3] Computer science spans theoretical disciplines (such as algorithms, theory of computation, and information theory) to applied disciplines (including the design and implementation of hardware and software).[4][5][6]",
+    "topic": "Computer science",
+    "difficulty": "Intermediate",
+    "readingTime": 17,
+    "tags": [
+      "computer science"
+    ]
+  },
+  {
+    "title": "Interesting fact about Computer_science",
+    "content": "Algorithms and data structures are central to computer science.[7]\nThe theory of computation concerns abstract models of computation and general classes of problems that can be solved using them. The fields of cryptography and computer security involve studying the means for secure communication and preventing security vulnerabilities. Computer graphics and computational geometry address the generation of images. Programming language theory considers different ways to describe computational processes, and database theory concerns the management of repositories of data. Human–computer interaction investigates the interfaces through which humans and computers interact, and software engineering focuses on the design and principles behind developing software. Areas such as operating systems, networks and embedded systems investigate the principles and design behind complex systems. Computer architecture describes the construction of computer components and computer-operated equipment. Artificial intelligence and machine learning aim to synthesize goal-orientated processes such as problem-solving, decision-making, environmental adaptation, planning and learning found in humans and animals. Within artificial intelligence, computer vision aims to understand and process image and video data, while natural language processing aims to understand and process textual and linguistic data.",
+    "topic": "Computer science",
+    "difficulty": "Intermediate",
+    "readingTime": 47,
+    "tags": [
+      "computer science"
+    ]
+  },
+  {
+    "title": "Interesting fact about Computer_science",
+    "content": "The fundamental concern of computer science is determining what can and cannot be automated.[2][8][3][9][10] The Turing Award is generally recognized as the highest distinction in computer science.[11][12]",
+    "topic": "Computer science",
+    "difficulty": "Intermediate",
+    "readingTime": 22,
+    "tags": [
+      "computer science"
+    ]
+  },
+  {
+    "title": "Interesting fact about Computer_science",
+    "content": "The earliest foundations of what would become computer science predate the invention of the modern digital computer. Machines for calculating fixed numerical tasks such as the abacus have existed since antiquity, aiding in computations such as multiplication and division. Algorithms for performing computations have existed since antiquity, even before the development of sophisticated computing equipment.[16]",
+    "topic": "Computer science",
+    "difficulty": "Advanced",
+    "readingTime": 21,
+    "tags": [
+      "computer science"
+    ]
+  },
+  {
+    "title": "Interesting fact about Engineering",
+    "content": "Engineering is the practice of using natural science, mathematics, and the engineering design process[1] to solve problems within technology, increase efficiency and productivity, and improve systems. Modern engineering comprises many subfields which include designing and improving infrastructure, machinery, vehicles, electronics, materials, and energy systems.[2]",
+    "topic": "Engineering",
+    "difficulty": "Intermediate",
+    "readingTime": 24,
+    "tags": [
+      "engineering"
+    ]
+  },
+  {
+    "title": "Interesting fact about Engineering",
+    "content": "The discipline of engineering encompasses a broad range of more specialized fields of engineering, each with a more specific emphasis for applications of mathematics and science. See glossary of engineering.",
+    "topic": "Engineering",
+    "difficulty": "Advanced",
+    "readingTime": 48,
+    "tags": [
+      "engineering"
+    ]
+  },
+  {
+    "title": "Interesting fact about Engineering",
+    "content": "The word engineering is derived from the Latin ingenium.[3]",
+    "topic": "Engineering",
+    "difficulty": "Intermediate",
+    "readingTime": 31,
+    "tags": [
+      "engineering"
+    ]
+  },
+  {
+    "title": "Interesting fact about Engineering",
+    "content": "The American Engineers' Council for Professional Development (the predecessor of the Accreditation Board for Engineering and Technology aka ABET)[4] has defined \"engineering\" as:",
+    "topic": "Engineering",
+    "difficulty": "Advanced",
+    "readingTime": 28,
+    "tags": [
+      "engineering"
+    ]
+  }
+]
