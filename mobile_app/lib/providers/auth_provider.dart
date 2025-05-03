@@ -1,13 +1,12 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/user.dart';
 
 class AuthProvider with ChangeNotifier {
   User? _user;
   bool _isLoading = false;
-  final _storage = const FlutterSecureStorage();
   final String _baseUrl = 'http://localhost:5000/api/auth';
 
   User? get user => _user;
@@ -31,7 +30,8 @@ class AuthProvider with ChangeNotifier {
       if (response.statusCode == 200) {
         final data = json.decode(response.body);
         _user = User.fromJson(data['user']);
-        await _storage.write(key: 'token', value: data['token']);
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('token', data['token']);
         notifyListeners();
       } else {
         throw Exception('Failed to login');
@@ -62,7 +62,8 @@ class AuthProvider with ChangeNotifier {
       if (response.statusCode == 201) {
         final data = json.decode(response.body);
         _user = User.fromJson(data['user']);
-        await _storage.write(key: 'token', value: data['token']);
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('token', data['token']);
         notifyListeners();
       } else {
         throw Exception('Failed to register');
@@ -76,13 +77,15 @@ class AuthProvider with ChangeNotifier {
   }
 
   Future<void> logout() async {
-    await _storage.delete(key: 'token');
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('token');
     _user = null;
     notifyListeners();
   }
 
   Future<void> autoLogin() async {
-    final token = await _storage.read(key: 'token');
+    final prefs = await SharedPreferences.getInstance();
+    final token = prefs.getString('token');
     if (token != null) {
       // Implement token validation and user data retrieval
       // This would typically involve a request to validate the token
