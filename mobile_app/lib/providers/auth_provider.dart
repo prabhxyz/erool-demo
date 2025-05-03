@@ -8,6 +8,11 @@ class AuthProvider with ChangeNotifier {
   User? _user;
   bool _isLoading = false;
   final String _baseUrl = 'http://localhost:5000/api/auth';
+  
+  // Test mode flag and credentials
+  final bool _testMode = true;  // Set to true for testing
+  final String _testEmail = "test@example.com";
+  final String _testPassword = "password123";
 
   User? get user => _user;
   bool get isLoading => _isLoading;
@@ -18,6 +23,24 @@ class AuthProvider with ChangeNotifier {
     notifyListeners();
 
     try {
+      if (_testMode && (email == _testEmail && password == _testPassword)) {
+        // Create a test user for development
+        _user = User(
+          id: 'test-123',
+          username: 'Test User',
+          email: _testEmail,
+          topics: ['math', 'science', 'history'],
+          bookmarks: [],
+          streak: 5,
+          points: 100,
+          badges: ['newcomer', 'quick_learner'],
+        );
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('token', 'test-token');
+        notifyListeners();
+        return;
+      }
+
       final response = await http.post(
         Uri.parse('$_baseUrl/login'),
         headers: {'Content-Type': 'application/json'},
@@ -27,16 +50,19 @@ class AuthProvider with ChangeNotifier {
         }),
       );
 
+      final data = json.decode(response.body);
+      
       if (response.statusCode == 200) {
-        final data = json.decode(response.body);
         _user = User.fromJson(data['user']);
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('token', data['token']);
         notifyListeners();
       } else {
-        throw Exception('Failed to login');
+        throw Exception(data['message'] ?? 'Failed to login');
       }
     } catch (e) {
+      _isLoading = false;
+      notifyListeners();
       rethrow;
     } finally {
       _isLoading = false;
@@ -49,6 +75,24 @@ class AuthProvider with ChangeNotifier {
     notifyListeners();
 
     try {
+      if (_testMode) {
+        // Create a test user for development
+        _user = User(
+          id: 'test-123',
+          username: username,
+          email: email,
+          topics: [],
+          bookmarks: [],
+          streak: 0,
+          points: 0,
+          badges: ['newcomer'],
+        );
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setString('token', 'test-token');
+        notifyListeners();
+        return;
+      }
+
       final response = await http.post(
         Uri.parse('$_baseUrl/register'),
         headers: {'Content-Type': 'application/json'},
@@ -59,16 +103,19 @@ class AuthProvider with ChangeNotifier {
         }),
       );
 
+      final data = json.decode(response.body);
+      
       if (response.statusCode == 201) {
-        final data = json.decode(response.body);
         _user = User.fromJson(data['user']);
         final prefs = await SharedPreferences.getInstance();
         await prefs.setString('token', data['token']);
         notifyListeners();
       } else {
-        throw Exception('Failed to register');
+        throw Exception(data['message'] ?? 'Failed to register');
       }
     } catch (e) {
+      _isLoading = false;
+      notifyListeners();
       rethrow;
     } finally {
       _isLoading = false;
@@ -87,9 +134,41 @@ class AuthProvider with ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
     if (token != null) {
-      // Implement token validation and user data retrieval
-      // This would typically involve a request to validate the token
-      // and get the current user's data
+      if (_testMode) {
+        // Recreate test user for development
+        _user = User(
+          id: 'test-123',
+          username: 'Test User',
+          email: _testEmail,
+          topics: ['math', 'science', 'history'],
+          bookmarks: [],
+          streak: 5,
+          points: 100,
+          badges: ['newcomer', 'quick_learner'],
+        );
+        notifyListeners();
+        return;
+      }
+
+      try {
+        final response = await http.get(
+          Uri.parse('$_baseUrl/me'),
+          headers: {
+            'Content-Type': 'application/json',
+            'x-auth-token': token,
+          },
+        );
+
+        if (response.statusCode == 200) {
+          final data = json.decode(response.body);
+          _user = User.fromJson(data['user']);
+          notifyListeners();
+        } else {
+          await logout();
+        }
+      } catch (e) {
+        await logout();
+      }
     }
   }
 } 
